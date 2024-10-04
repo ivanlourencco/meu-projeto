@@ -1,0 +1,188 @@
+/* Estilos Globais */
+body {
+  font-family: "Arial", "Helvetica", sans-serif;
+  background-color: #f7f7f7;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  background-image: url(./img/13-macos-sierra-wallpaper-1260x907.jpg);
+  background-position: center;
+  background-size: cover;
+  line-height: 1.6;
+}
+
+/* Container Principal */
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Parágrafos */
+p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* Estilo dos Inputs e Selects */
+input,
+select {
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Estilo dos Botões */
+button,
+.back-button {
+  background-color: #007bff; /* Cor uniforme para todos os botões */
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+button:hover,
+.back-button:hover {
+  opacity: 1;
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+  transform: translateY(-2px);
+}
+
+/* Estilo da Lista de Tarefas */
+.todo {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.todo:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Alinhamento dos Botões dentro da Tarefa */
+.todo-actions {
+  display: flex;
+  align-items: center;
+}
+
+.complete {
+  background-color: #5cb85c;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Botão de Remover */
+.remove {
+  background-color: #e74c3c;
+  padding: 6px 12px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.remove:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Formulário de Tarefas */
+.todo-form {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .app {
+    padding: 20px;
+  }
+
+  button,
+  .back-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  input,
+  select {
+    padding: 8px;
+  }
+}
+
+.filter,
+.search {
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Estilo do Botão de Voltar */
+.back-button {
+  position: absolute; /* Posiciona o botão de forma absoluta */
+  top: 20px; /* Distância do topo */
+  left: 20px; /* Distância do lado esquerdo */
+  padding: 8px 12px; /* Padding reduzido para um botão menor */
+  font-size: 0.9rem; /* Tamanho da fonte menor */
+}
