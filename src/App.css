@@ -1,4 +1,3 @@
-/* Estilos Globais */
 body {
   font-family: "Arial", "Helvetica", sans-serif;
   background-color: #f7f7f7;
@@ -11,7 +10,6 @@ body {
   line-height: 1.6;
 }
 
-/* Container Principal */
 .app {
   max-width: 600px;
   margin: 40px auto;
@@ -22,7 +20,6 @@ body {
   text-align: center;
 }
 
-/* Títulos */
 h1 {
   font-size: 2.4rem;
   font-weight: bold;
@@ -37,13 +34,11 @@ h2 {
   color: #555;
 }
 
-/* Parágrafos */
 p {
   margin: 10px 0;
   font-size: 1rem;
 }
 
-/* Estilo dos Inputs e Selects */
 input,
 select {
   box-sizing: border-box;
@@ -62,10 +57,9 @@ select:focus {
   outline: none;
 }
 
-/* Estilo dos Botões */
 button,
 .back-button {
-  background-color: #007bff; /* Cor uniforme para todos os botões */
+  background-color: #007bff;
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -82,11 +76,10 @@ button,
 button:hover,
 .back-button:hover {
   opacity: 1;
-  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+  background-color: #0056b3;
   transform: translateY(-2px);
 }
 
-/* Estilo da Lista de Tarefas */
 .todo {
   background-color: #ffffff;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
@@ -104,7 +97,6 @@ button:hover,
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Alinhamento dos Botões dentro da Tarefa */
 .todo-actions {
   display: flex;
   align-items: center;
@@ -119,7 +111,6 @@ button:hover,
   font-weight: bold;
 }
 
-/* Botão de Remover */
 .remove {
   background-color: #e74c3c;
   padding: 6px 12px;
@@ -135,7 +126,6 @@ button:hover,
   transform: scale(1.05);
 }
 
-/* Formulário de Tarefas */
 .todo-form {
   padding: 15px;
   background-color: #ffffff;
@@ -143,7 +133,6 @@ button:hover,
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos Responsivos */
 @media (max-width: 768px) {
   .app {
     padding: 20px;
@@ -178,11 +167,10 @@ button:hover,
   margin-bottom: 10px;
 }
 
-/* Estilo do Botão de Voltar */
 .back-button {
-  position: absolute; /* Posiciona o botão de forma absoluta */
-  top: 20px; /* Distância do topo */
-  left: 20px; /* Distância do lado esquerdo */
-  padding: 8px 12px; /* Padding reduzido para um botão menor */
-  font-size: 0.9rem; /* Tamanho da fonte menor */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
 }

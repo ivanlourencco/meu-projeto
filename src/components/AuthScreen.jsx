@@ -5,7 +5,7 @@ import "/Users/ivan/Documents/faculdade/todolist-react/todolist2/meu-projeto/src
 
 function AuthScreen() {
   const [currentScreen, setCurrentScreen] = useState("login");
-  const navigate = useNavigate(); // Inicializar o hook de navegação
+  const navigate = useNavigate();
 
   const renderScreen = () => {
     switch (currentScreen) {
@@ -43,8 +43,6 @@ function LoginScreen({ onSwitch, onLogin }) {
           onLogin();
         }}
       >
-        {" "}
-        {/* Previne o envio padrão e chama onLogin */}
         <input type="text" placeholder="Usuário" />
         <input type="password" placeholder="Senha" />
         <button type="submit">Entrar</button>
