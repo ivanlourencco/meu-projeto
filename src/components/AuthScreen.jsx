@@ -49,9 +49,9 @@ function LoginScreen({ onSwitch, onLogin }) {
       </form>
       <div className="links">
         <button onClick={() => onSwitch("signup")}>Criar Conta</button>
-        <button onClick={() => onSwitch("forgotPassword")}>
+        {/* <button onClick={() => onSwitch("forgotPassword")}>
           Esqueci minha senha
-        </button>
+        </button> */}
       </div>
     </div>
   );
